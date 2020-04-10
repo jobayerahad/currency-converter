@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import Content from "./Content";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="header">
+        <h1 className="heading-primary">Currency Converter</h1>
       </header>
-    </div>
+
+      <Content />
+
+      <footer className="footer">
+        <p className="footer__copyright">
+          &copy; 2020 Copyright:
+          <a href="http://www.jobayerahad.com" className="footer__link">
+            Jobayer Al Mahmud
+          </a>
+        </p>
+      </footer>
+    </>
   );
-}
+};
 
 export default App;
